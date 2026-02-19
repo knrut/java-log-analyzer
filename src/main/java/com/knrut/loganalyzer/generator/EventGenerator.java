@@ -40,7 +40,7 @@ public final class EventGenerator {
         return switch (pick) {
             case 0 -> new LoginEvent(eventTime, userId, IPS.get(RANDOM.nextInt(IPS.size())));
             case 1 -> new LogoutEvent(eventTime, userId);
-            case 2 -> new PurchaseEvent(eventTime, userId, randomAmount(),ITEMS.get(RANDOM.nextInt(ITEMS.size())));
+            case 2 -> new PurchaseEvent(eventTime, userId, randomAmount(), ITEMS.get(RANDOM.nextInt(ITEMS.size())));
             default -> new ErrorEvent(eventTime, userId, randomErrorCode());
         };
     }
