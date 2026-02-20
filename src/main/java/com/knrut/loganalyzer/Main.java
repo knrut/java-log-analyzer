@@ -5,6 +5,7 @@ import com.knrut.loganalyzer.io.EventFileReader;
 import com.knrut.loganalyzer.model.Event;
 import com.knrut.loganalyzer.parser.EventParser;
 import com.knrut.loganalyzer.report.BasicReports;
+import com.knrut.loganalyzer.report.UserReports;
 
 import java.io.Reader;
 import java.nio.file.Files;
